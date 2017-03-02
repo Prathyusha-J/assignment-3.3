@@ -1,0 +1,56 @@
+			ASSIGNMENT 3.3
+
+1) List the components of hadoop2.X and explain each component in detail.
+
+A) HADOOP 2.x:
+              * HDFS stands for Hadoop Distributed File System. It is also know as HDFS V2 as it is part of Hadoop 2.x with some enhanced 
+             features. It is used as a Distributed Storage System in Hadoop Architecture.
+              * 
+
+MAJOR COMPONENTS :
+              * The three components are also known as Three Pillars of Hadoop 2.
+	-- HDFS
+                  -- YARN
+	-- MapReduce
+
+1) YARN :
+              * YARN is the architectural center of Hadoop that allows multiple data processing engines such as interactive SQL, real-time streaming, 
+                  data science to handle data stored in a single platform.
+              * YARN is the prerequisite for Enterprise Hadoop, providing resource management and a central platform, security
+              * It extends the power of Hadoop to new technologies within the data center so that they can take advantage of cost effective processing.
+              * YARN is the foundation of the new generation of Hadoop and is enabling organizations everywhere to realize a modern data 
+                architecture.
+              
+              FEATURES - 1) Multi-tenancy - YARN allows multiple access engines  to use Hadoop as the common standard for batch.
+		  2) Scalability - Data center processing power continues to rapidly expand. 
+		  3) Cluster utilization - Improves utilization over more static MapReduce rules used in early versions of Hadoop.
+
+2) HDFS :
+            * HDFS is the Hadoop file system and comprises two major components: namespaces and blocks storage service. 
+               -- The namespace service manages operations on files and directories, such as creating and modifying files and directories. 
+               -- The block storage service implements data node block operations and replication. 
+            *  With HDFS federation, multiple Namenode servers manage namespaces and this allows for horizontal scaling, performance
+                improvements, and multiple namespaces.
+            *  Moving to HDFS federation requires formatting Namenodes, updating to use the latest Hadoop cluster software.
+            * It also requires the mode of  adding additional Namenodes to the cluster in order to meet the requirements.
+
+	FEATURES - 1) High performance support for MapReduce applications.
+		      2)Ease of deployment requires separate clusters for analytics and databases.
+
+3)MAPREDUCE :
+         * In MapReduce MRv2, the functions of the JobTracker have been split between three services. 
+         * The ResourceManager is a persistent YARN service that receives and runs applications (a MapReduce job is an application) on the cluster. 
+         * It contains the scheduler, which, as previously, is pluggable. 
+         * The MapReduce-specific capabilities of the JobTracker have been moved into the MapReduce Application Master, one of which is 
+            started to manage each MapReduce job and terminated when the job completes.
+         * It is responsible for launching containers, each of which can house a map or reduce task.	
+
+	COMPONENTS - 1) The JobTracker function of serving information about completed jobs has been moved to the JobHistory Server. 
+		             2)The TaskTracker has been replaced with the NodeManager, a YARN service that manages resources and 
+                                                     deployment on a host.
+
+	   
+
+.
+
+
